@@ -6,6 +6,12 @@ terraform {
       version = ">=3.43.0"
     }
   }
+  cloud {
+    organization = "terraformpolicies"
+    workspaces {
+      name = "remotestate"
+    }
+  }
 }
 
 locals {
